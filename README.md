@@ -10,6 +10,14 @@
 
 ## 使い方
 
-alt-ime-ahk.exe をダウンロードして好きな場所に置き、ダブルクリックで起動してください。 タスクトレイに常駐します。
+[releases](https://github.com/karakaram/alt-ime-ahk/releases) から alt-ime-ahk.exe をダウンロードして好きな場所に置き、起動してください。 タスクトレイに常駐します。
 
 終了する場合はタスクトレイのアイコンを右クリックし、「終了」をクリックしてください。
+
+アンインストールは alt-ime-ahk.exe を削除するだけで OK です。
+
+## IntelliJ 製の IDE で使う場合は Tool Buttons をオンに
+
+PhpStorm など IntelliJ 製の IDE をお使いの方は「上部メニューバー　＞　View　＞　Tool Buttons」をオンにしてください。
+
+オフのまま使うと Alt キーを離した際に alt-ime-ahk.exe がエラー終了します。
