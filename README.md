@@ -16,8 +16,8 @@
 
 アンインストールは alt-ime-ahk.exe を削除するだけで OK です。
 
-## IntelliJ 製の IDE で使う場合は Tool Buttons をオンに
+## JetBrains 製の IDE で使う場合は Tool Buttons をオンに
 
-PhpStorm など IntelliJ 製の IDE をお使いの方は「上部メニューバー　＞　View　＞　Tool Buttons」をオンにしてください。
+IntelliJ IDEA, PhpStorm など JetBrains 製の IDE をお使いの方は「上部メニューバー　＞　View　＞　Tool Buttons」をオンにしてください。
 
 オフのまま使うと Alt キーを離した際に alt-ime-ahk.exe がエラー終了します。
