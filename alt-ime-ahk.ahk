@@ -9,6 +9,9 @@
 
 #Include IME.ahk
 
+; AutoHotKey設定
+#MaxHotkeysPerInterval 350
+
 ; 主要なキーを HotKey に設定し、何もせずパススルーする
 *~a::
 *~b::
