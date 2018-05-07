@@ -4,7 +4,6 @@
 ; 右 Alt キーの空打ちで IME を「かな」に切り替え
 ; Alt キーを押している間に他のキーを打つと通常の Alt キーとして動作
 ;
-; AutoHotkey: v1.1.26.01
 ; Author:     karakaram   http://www.karakaram.com/alt-ime-on-off
 
 #Include IME.ahk
