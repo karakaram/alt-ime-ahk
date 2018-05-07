@@ -94,8 +94,6 @@
 *~Esc::
 *~Tab::
 *~Space::
-*~LAlt::
-*~RAlt::
 *~Left::
 *~Right::
 *~Up::
@@ -108,6 +106,10 @@
 *~PgUp::
 *~PgDn::
     Return
+
+; 上部メニューがアクティブになるのを抑制
+*~LAlt::Send {Blind}{vk07}
+*~RAlt::Send {Blind}{vk07}
 
 ; 左 Alt 空打ちで IME を OFF
 LAlt up::
