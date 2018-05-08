@@ -4,7 +4,6 @@
 ; 右 Alt キーの空打ちで IME を「かな」に切り替え
 ; Alt キーを押している間に他のキーを打つと通常の Alt キーとして動作
 ;
-; AutoHotkey: v1.1.26.01
 ; Author:     karakaram   http://www.karakaram.com/alt-ime-on-off
 
 #Include IME.ahk
@@ -95,8 +94,6 @@
 *~Esc::
 *~Tab::
 *~Space::
-*~LAlt::
-*~RAlt::
 *~Left::
 *~Right::
 *~Up::
@@ -109,6 +106,10 @@
 *~PgUp::
 *~PgDn::
     Return
+
+; 上部メニューがアクティブになるのを抑制
+*~LAlt::Send {Blind}{vk07}
+*~RAlt::Send {Blind}{vk07}
 
 ; 左 Alt 空打ちで IME を OFF
 LAlt up::
