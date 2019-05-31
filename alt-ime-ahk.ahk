@@ -126,3 +126,17 @@ RAlt up::
         IME_SET(1)
     }
     Return
+	
+; Vi cursor: Escape key + hjkl
+Esc & h::
+  Send, {Left down}{Left up}
+Return
+Esc & j::
+   Send, {Down down}{Down up}
+Return
+Esc & k::
+   Send, {Up down}{Up up}
+Return
+Esc & l::
+   Send, {Right down}{Right up}
+Return
