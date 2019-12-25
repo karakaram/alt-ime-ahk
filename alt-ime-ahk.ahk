@@ -1,15 +1,8 @@
-; 左右 Alt キーの空打ちで IME の OFF/ON を切り替える
-;
-; 左 Alt キーの空打ちで IME を「英数」に切り替え
-; 右 Alt キーの空打ちで IME を「かな」に切り替え
-; Alt キーを押している間に他のキーを打つと通常の Alt キーとして動作
-;
-; Author:     karakaram   http://www.karakaram.com/alt-ime-on-off
+; Author : karakaram
 
-; Razer Synapseなど、キーカスタマイズ系のツールを併用しているときのエラー対策
+; Suppress errors when using a key customization tool such as Razer Synapse
 #MaxHotkeysPerInterval 350
 
-; 主要なキーを HotKey に設定し、何もせずパススルーする
 *~a::
 *~b::
 *~c::
@@ -105,11 +98,15 @@
 *~PgDn::
     Return
 
-; 上部メニューがアクティブになるのを抑制
+; Prevent a cursor from moving to the menu when pressing an Alt key
+; Refer to https://www.autohotkey.com/docs/AHKL_ChangeLog.htm#v1.1.27.00
+;
+; Unsuppressed hotkeys such as ~#a:: no longer cause masking, because the unsuppressed keydown/keyup is sufficient to prevent a menu.
+; However, mouse hotkeys like ~*MButton:: no longer suppress the Start Menu if combined with the Win key.
+; It can be suppressed manually with Send {Blind}{vk07} or similar.
 *~LAlt::Send {Blind}{vk07}
 *~RAlt::Send {Blind}{vk07}
 
-; 左 Alt 空打ちで IME を OFF
 LAlt up::
     if (A_PriorHotkey == "*~LAlt")
     {
@@ -117,7 +114,6 @@ LAlt up::
     }
     Return
 
-; 右 Alt 空打ちで IME を ON
 RAlt up::
     if (A_PriorHotkey == "*~RAlt")
     {
@@ -125,12 +121,6 @@ RAlt up::
     }
     Return
 
-;-----------------------------------------------------------
-; IMEの状態をセット
-;   SetSts          1:ON / 0:OFF
-;   WinTitle="A"    対象Window
-;   戻り値          0:成功 / 0以外:失敗
-;-----------------------------------------------------------
 IME_SET(SetSts, WinTitle="A")    {
     ControlGet,hwnd,HWND,,,%WinTitle%
     if    (WinActive(WinTitle))    {
@@ -147,3 +137,4 @@ IME_SET(SetSts, WinTitle="A")    {
           ,  Int, 0x006   ;wParam  : IMC_SETOPENSTATUS
           ,  Int, SetSts) ;lParam  : 0 or 1
 }
+
