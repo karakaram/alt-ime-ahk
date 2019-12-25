@@ -11,6 +11,10 @@ This repository contains the AutoHotkey scripts to operates IME with Alt key.
 
 ## Note
 
+## Licence
+
+[MIT](https://github.com/karakaram/master/LICENCE)
+
 ## Author
 
 [karakaram](https://github.com/karakaram)

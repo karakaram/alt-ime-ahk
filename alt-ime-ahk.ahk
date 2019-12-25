@@ -1,3 +1,4 @@
+; License: MIT
 ; Author : karakaram
 
 ; Suppress errors when using a key customization tool such as Razer Synapse
