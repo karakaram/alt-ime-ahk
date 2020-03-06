@@ -140,3 +140,7 @@ Return
 Esc & l::
    Send, {Right down}{Right up}
 Return
+
+;CapsLockキーにCtrlキーの仕事をさせる
+Capslock::Ctrl
+sc03a::Ctrl
