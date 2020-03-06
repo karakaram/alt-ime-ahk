@@ -141,6 +141,29 @@ Esc & l::
    Send, {Right down}{Right up}
 Return
 
-;CapsLockキーにCtrlキーの仕事をさせる
-Capslock::Ctrl
-sc03a::Ctrl
+;Change CapsLock to Ctrl
+;sc03A & p::send {Up}
+;sc03A & b::send {Left}
+;sc03A & n::send {Down}
+;sc03A & f::send {Right}
+
+sc03A & a::send {Home}
+sc03A & e::send {End}
+sc03A & k::send +{End}{Del}
+sc03A & d::send {Del}
+sc03A & h::send {BS}
+
+sc03A & q::send ^{q}
+sc03A & w::send ^{w}
+sc03A & r::send ^{r}
+sc03A & t::send ^{t}
+sc03A & y::send ^{y}
+sc03A & u::send ^{u}
+sc03A & s::send ^{s}
+sc03A & g::send ^{g}
+sc03A & z::send ^{z}
+sc03A & x::send ^{x}
+sc03A & c::send ^{c}
+sc03A & v::send ^{v}
+sc03A & b::send ^{b}
+sc03A & .::send ^{.}
