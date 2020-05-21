@@ -108,22 +108,22 @@
     Return
 
 ; 上部メニューがアクティブになるのを抑制
-; ただし、ダブルタップ時(200ms以内)は単altキーを入力
+; ただし、200ms以内の2回押し時は抑制しない
 *~LAlt::
-    If (A_PriorHotKey == "RAlt up" and 200 > A_TimeSincePriorHotkey )
+    If ( A_PriorHotKey == "LAlt up" and 200 > A_TimeSincePriorHotkey )
     {
-        Send {LAlt}
-    }else{
-         Send {Blind}{vk07}
+        Send {Blind}{Alt}
+    } else {
+        Send {Blind}{vk07}
     }
     Return  
 
 *~RAlt::
-    If (A_PriorHotKey == "RAlt up" and 200 > A_TimeSincePriorHotkey )
+    If ( A_PriorHotKey == "RAlt up" and 200 > A_TimeSincePriorHotkey )
     {
-        Send {RAlt}
-    }else{
-         Send {Blind}{vk07}
+        Send {Blind}{Alt}
+    } else {
+        Send {Blind}{vk07}
     }
     Return
  
