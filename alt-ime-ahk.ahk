@@ -108,15 +108,24 @@
     Return
 
 ; 上部メニューがアクティブになるのを抑制
-; ただし、ダブルタップ時(200ms以内)は例外(同一キー制約をつけたいがうまく行かない)
-;     If (A_PriorHotKey == A_ThisHotKey and 200 < A_TimeSincePriorHotkey )
-
+; ただし、ダブルタップ時(200ms以内)は単altキーを入力
 *~LAlt::
-*~RAlt::
-    if ( 200 < A_TimeSincePriorHotkey )
+    If (A_PriorHotKey == "RAlt up" and 200 > A_TimeSincePriorHotkey )
     {
+        Send {LAlt}
+    }else{
          Send {Blind}{vk07}
     }
+    Return  
+
+*~RAlt::
+    If (A_PriorHotKey == "RAlt up" and 200 > A_TimeSincePriorHotkey )
+    {
+        Send {RAlt}
+    }else{
+         Send {Blind}{vk07}
+    }
+    Return
  
 ; 左 Alt 空打ちで IME を OFF
 LAlt up::
