@@ -126,7 +126,3 @@ RShift up::
         IME_SET(1)
     }
     Return
-
-; Capslock to Ctrl
-Capslock::Ctrl
-sc03a::Ctrl
