@@ -108,8 +108,8 @@
     Return
 
 ; 上部メニューがアクティブになるのを抑制
-*~LShift::Send {Blind}{vk07}
-*~RShift::Send {Blind}{vk07}
+; *~LShift::Send {Blind}{vk07}
+; *~RShift::Send {Blind}{vk07}
 
 ; 左 Shift 空打ちで IME を OFF
 LShift up::
@@ -124,5 +124,21 @@ RShift up::
     if (A_PriorHotkey == "*~RShift")
     {
         IME_SET(1)
+    }
+    Return
+
+; Capslock 空打ちで escape, そうでない場合Ctrl
+Capslock::Ctrl
+sc03a::Ctrl
+Capslock up::
+    if (A_PriorHotkey == "*~Capslock")
+    {
+        Send {Blind}{Escape Up}
+    }
+    Return
+Ctrl up::
+    if (A_PriorHotkey == "*~Ctrl")
+    {
+        Send {Blind}{Escape Up}
     }
     Return
