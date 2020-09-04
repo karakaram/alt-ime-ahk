@@ -127,18 +127,6 @@ RShift up::
     }
     Return
 
-; Capslock 空打ちで escape, そうでない場合Ctrl
+; Capslock to Ctrl
 Capslock::Ctrl
 sc03a::Ctrl
-Capslock up::
-    if (A_PriorHotkey == "*~Capslock")
-    {
-        Send {Blind}{Escape Up}
-    }
-    Return
-Ctrl up::
-    if (A_PriorHotkey == "*~Ctrl")
-    {
-        Send {Blind}{Escape Up}
-    }
-    Return
