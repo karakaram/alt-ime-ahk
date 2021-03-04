@@ -67,7 +67,6 @@
 *~#::
 *~$::
 *~%::
-*~^::
 *~&::
 *~*::
 *~(::
@@ -110,6 +109,7 @@
 ; 上部メニューがアクティブになるのを抑制
  *~LShift::Send {Blind}{vk07}
  *~RShift::Send {Blind}{vk07}
+ *~LCtrl::Send {Blind}{vk07}
 
 ; 左 Shift 空打ちで IME を OFF
 LShift up::
@@ -124,5 +124,13 @@ RShift up::
     if (A_PriorHotkey == "*~RShift")
     {
         IME_SET(1)
+    }
+    Return
+
+; 左 Ctrl 空打ちで Esc
+LCtrl up::
+    if (A_PriorHotkey == "*~LCtrl")
+    {
+        Send {Esc}
     }
     Return
