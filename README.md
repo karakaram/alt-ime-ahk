@@ -14,7 +14,7 @@
 
 ## 使い方
 
-[releases](https://github.com/karakaram/alt-ime-ahk/releases) から alt-ime-ahk.exe をダウンロードして好きな場所に置き、起動してください。 タスクトレイに常駐します。
+[alt-ime-ahk v0.4.5](https://github.com/karakaram/alt-ime-ahk/releases/download/v0.4.5/alt-ime-ahk.zip) から alt-ime-ahk.zip をダウンロードして解凍し、alt-ime-ahk.exe を好きな場所に置き、起動してください。 タスクトレイに常駐します。
 
 終了する場合はタスクトレイのアイコンを右クリックし、「終了」をクリックしてください。
 
@@ -29,3 +29,4 @@ IntelliJ IDEA など JetBrains 製の IDE をお使いの方は「上部メニ�
 ## ブログの紹介ページ
 
 [Altの空打ちで日本語入力(IME)を切り替えるツールを作った](http://www.karakaram.com/alt-ime-on-off/)
+
