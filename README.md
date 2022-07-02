@@ -14,7 +14,7 @@
 
 ## 使い方
 
-[alt-ime-ahk v0.4.5](https://github.com/karakaram/alt-ime-ahk/releases/download/v0.4.5/alt-ime-ahk.zip) から alt-ime-ahk.zip をダウンロードして解凍し、alt-ime-ahk.exe を好きな場所に置き、起動してください。 タスクトレイに常駐します。
+[alt-ime-ahk v0.4.6](https://github.com/karakaram/alt-ime-ahk/releases/download/v0.4.6/alt-ime-ahk.zip) から alt-ime-ahk.zip をダウンロードして解凍し、alt-ime-ahk.exe を好きな場所に置き、起動してください。 タスクトレイに常駐します。
 
 終了する場合はタスクトレイのアイコンを右クリックし、「終了」をクリックしてください。
 
