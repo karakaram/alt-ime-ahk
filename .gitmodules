@@ -1,0 +1,3 @@
+[submodule "IMEv2.ahk"]
+	path = IMEv2.ahk
+	url = git@github.com:k-ayaki/IMEv2.ahk.git
