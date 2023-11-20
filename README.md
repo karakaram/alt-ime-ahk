@@ -1,5 +1,7 @@
 # ctrl-ime-ahk
 
+> forked from https://github.com/karakaram/alt-ime-ahk
+
 ## 概要
 
 左右 Ctrl キーの空打ちで IME を OFF/ON する AutoHotKey スクリプトです。
