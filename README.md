@@ -27,8 +27,3 @@
 IntelliJ IDEA など JetBrains 製の IDE をお使いの方は「上部メニューバー　＞　View　＞　Tool Buttons」をオンにしてください。
 
 オフのまま使うと Ctrl キーを離した際に ctrl-ime-ahk.exe がエラー終了します。
-
-## ブログの紹介ページ
-
-[Ctrlの空打ちで日本語入力(IME)を切り替えるツールを作った](http://www.karakaram.com/ctrl-ime-on-off/)
-
